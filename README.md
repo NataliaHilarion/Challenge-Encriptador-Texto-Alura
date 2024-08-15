@@ -3,12 +3,10 @@
 <!-- **Texto en negrita** -->
 __Descencriptando__
 
-![Texto alternativo](URL de la imagen)
-
-
+![Encriptador Imagen](./images/encriptadorImagen.png)
 
 <!-- *Texto en cursiva* -->
 _Encriptando_
 
+[![Video](./videos/pantalla.mp4])
 
-![Texto alternativo](URL de la imagen)

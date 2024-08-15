@@ -8,5 +8,6 @@ __Descencriptando__
 <!-- *Texto en cursiva* -->
 _Encriptando_
 
-[![Video](./videos/pantalla.mp4])
+[![Video de ejemplo](./images/encriptadorImagen.png)](URL_DEL_VIDEO)
+
 

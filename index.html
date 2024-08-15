@@ -15,20 +15,21 @@
   </header>
   <main>
     <section class="section-one">
-      <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el Texto Aquí"> </textarea>
+      <textarea id="section-one-text-area" class="text-area" cols="30" rows="10" placeholder="Ingrese el Texto Aquí"> </textarea>
       <div class="instrucciones">
         <img src="./images/Vector.png" alt="Signo Precaucion" class="icon-informacion">
         <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
       </div>
       <div class="botones">
-        <button class="btn-encriptar">Encriptar</button>
-        <button class="btn-desencriptar">Desencriptar</button>
+        <button onclick="encriptandoBoton()" class="btn-encriptar" >Encriptar</button>
+        <button onclick="desEncriptandoBoton()" class="btn-desencriptar">Desencriptar</button>
       </div>
     </section>
     <section>
       <div class="text-encriptado">
-        <textarea class="mensaje" cols="40" rows="30"></textarea>
-        <button class="btn-copiar">Copiar</button>
+        <textarea  id="area-mensaje-encriptado" class="mensaje" cols="40" rows="30"></textarea>
+        <p class="text-encriptado-p">Ningún mensaje fue encontrado</p>
+        <button onclick="copiandoEncriptacionBoton() " class="btn-copiar" style="display: none;" >Copiar</button>
       </div>
     </section>
   </main>

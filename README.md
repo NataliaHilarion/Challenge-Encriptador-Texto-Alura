@@ -6,8 +6,9 @@ __Descencriptando__
 ![Encriptador Imagen](./images/encriptadorImagen.png)
 
 <!-- *Texto en cursiva* -->
-_Encriptando_
+_Video: Encriptando_
 
-[![Video de ejemplo](./images/encriptadorImagen.png)](URL_DEL_VIDEO)
+[![Video Thumbnail](./images/encriptadorImagen.png)](./videos/miVideo.mp4)
+
 
 

@@ -142,6 +142,7 @@ main {
   margin-block-end: 1em;
   font-size: 0.5 em;
   color: #495057;
+  text-decoration: underline;
 }
 
 .instrucciones{
@@ -160,3 +161,7 @@ main {
   height: 15px;
   margin-left: 20px;
 }
+
+
+
+

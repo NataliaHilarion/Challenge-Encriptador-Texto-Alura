@@ -68,11 +68,15 @@ btnDesencriptar.addEventListener("click",  function desEncriptandoBoton() {
   btnOculto.style.display = "block";
   mensaje.style.backgroundImage = "none";
   areaTextParrafo.style.display = "none";
+  mensaje.style.backgroundImage = "url('./images/desencriptado.webp')";
 })
 
 btnOculto.addEventListener("click", async function copiandoEncriptacionBoton() {
    try {
      await navigator.clipboard.writeText(mensaje.value);
+      mensaje.value = " "
+      btnOculto.style.display = "none"
+      mensaje.style.backgroundImage = "url('./images/copiado.jpg')";
    } catch (err) {
      console.error("Error al copiar el texto");
    }

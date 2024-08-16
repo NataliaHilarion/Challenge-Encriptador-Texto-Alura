@@ -8,14 +8,14 @@ const textArea = document.getElementById("section-one-text-area");
 textArea.value = "";
 
 
-function encriptandoBoton() {
+btnEncriptar.addEventListener("click",  function encriptandoBoton() {
   const textoEncriptado = encriptando(textArea.value);
   mensaje.value = textoEncriptado;
   textArea.value = "";
   btnOculto.style.display = "block";
   mensaje.style.backgroundImage = "none";
   areaTextParrafo.style.display = "none";
-}
+})
 
 function encriptando(stringEncriptado) {
   let matrizCodigo = [
@@ -61,14 +61,14 @@ function desencriptando(stringDesencriptado) {
   return stringDesencriptado;
 }
 
-function desEncriptandoBoton() {
+btnDesencriptar.addEventListener("click",  function desEncriptandoBoton() {
   const textoDesencriptado = desencriptando(textArea.value);
   mensaje.value = textoDesencriptado;
   textArea.value = "";
   btnOculto.style.display = "block";
   mensaje.style.backgroundImage = "none";
   areaTextParrafo.style.display = "none";
-}
+})
 
  async function copiandoEncriptacionBoton() {
    try {

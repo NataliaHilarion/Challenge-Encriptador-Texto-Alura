@@ -1,8 +1,8 @@
-const btnOculto = document.getElementsByClassName("btn-copiar");
-const btnEncriptar = document.getElementsByClassName("btn-encriptar");
-const btnDesencriptar = document.getElementsByClassName("btn-desencriptar");
-const mensajeEncriptado = document.getElementsByClassName("text-encriptado");
-const areaTextParrafo = document.getElementsByClassName("text-encriptado-p");
+const btnOculto = document.getElementsByClassName("btn-copiar")[0];
+const btnEncriptar = document.getElementsByClassName("btn-encriptar")[0];
+const btnDesencriptar = document.getElementsByClassName("btn-desencriptar")[0];
+const mensajeEncriptado = document.getElementsByClassName("text-encriptado")[0];
+const areaTextParrafo = document.getElementsByClassName("text-encriptado-p")[0];
 const mensaje = document.getElementById("area-mensaje-encriptado");
 const textArea = document.getElementById("section-one-text-area");
 textArea.value = "";
@@ -70,11 +70,11 @@ btnDesencriptar.addEventListener("click",  function desEncriptandoBoton() {
   areaTextParrafo.style.display = "none";
 })
 
- async function copiandoEncriptacionBoton() {
+btnOculto.addEventListener("click", async function copiandoEncriptacionBoton() {
    try {
      await navigator.clipboard.writeText(mensaje.value);
    } catch (err) {
      console.error("Error al copiar el texto");
    }
- }
+ })
 

@@ -1,8 +1,8 @@
-const btnOculto = document.getElementsByClassName("btn-copiar")[0];
-const btnEncriptar = document.getElementsByClassName("btn-encriptar")[0];
-const btnDesencriptar = document.getElementsByClassName("btn-desencriptar")[0];
-const mensajeEncriptado = document.getElementsByClassName("text-encriptado")[0];
-const areaTextParrafo = document.getElementsByClassName("text-encriptado-p")[0];
+const btnOculto = document.querySelector(".btn-copiar");
+const btnEncriptar = document.querySelector(".btn-encriptar");
+const btnDesencriptar = document.querySelector(".btn-desencriptar");
+const mensajeEncriptado = document.querySelector(".text-encriptado");
+const areaTextParrafo = document.querySelector(".text-encriptado-p");
 const mensaje = document.getElementById("area-mensaje-encriptado");
 const textArea = document.getElementById("section-one-text-area");
 textArea.value = "";
